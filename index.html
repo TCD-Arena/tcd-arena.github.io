@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Cache-control" content="public">
-  <meta name="description" content="CausalRivers - Scaling up benchmarking of causal discovery for real-world time-series">
-  <meta name="keywords" content="CausalRivers, Germany, Rivers, Causality, Benchmarking, Time-Series">
+  <meta name="description" content="TCD-Arena - Assessing Robustness of Time Series Causal Discovery Methods Against Assumption Violations">
+  <meta name="keywords" content="TCD-Arena, Causality, Benchmarking, Time-Series">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CausalRivers - Scaling up benchmarking of causal discovery for real-world time-series</title>
+  <title>TCD-Arena - Assessing Robustness of Time Series Causal Discovery Methods Against Assumption Violations</title>
 
   <link rel="icon" href="./static/images/favicon.ico" type="image/x-icon">
 
@@ -51,6 +51,9 @@
             More Research from us
           </a>
           <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://causalrivers.github.io/">
+              ICLR 2025 - CausalRivers: Scaling up benchmarking of causal discovery for real-world time-series
+            </a>
             <a class="navbar-item" href="https://eifer-mam.github.io/">
               CVPR 2025 - EIFER: lectromyography-Informed Facial Expression Reconstruction For Physiological-Based Synthesis and Analysis 
             </a>
@@ -74,19 +77,17 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="spotbox spotlight">
-              <h1 class="title is-1 publication-title"><u>CausalRivers</u><br> Scaling up benchmarking of causal discovery for real-world time-series</h1>
+            <!--  class="spotbox spotlight" -->
+            <div > 
+              <h1 class="title is-1 publication-title"><u>TCD-Arena</u><br> Assessing Robustness of Time Series Causal Discovery Methods Against Assumption Violations</h1>
             </div>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://scholar.google.de/citations?user=Y4bL1asAAAAJ&hl=en">Gideon Stein</a>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.de/citations?user=ElQ7URQAAAAJ&hl=en">Maha Shadaydeh</a>,</span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=WyB9nuYAAAAJ&hl=de">Jan Blunk</a>,
-              </span>
-              <span class="author-block">
                 <a href="https://scholar.google.com/citations?user=s9bfMqEAAAAJ&hl=de">Niklas Penzel</a>,
+              </span>
+              <a href="https://scholar.google.com/citations?user=S_uDnZwAAAAJ&hl=en">Tristan Piater</a>,
               </span>
               <span class="author-block">
                 <a href="https://scholar.google.de/citations?hl=en&user=bhpi3vgAAAAJ">Joachim Denzler</a>
@@ -98,35 +99,35 @@
             </div>
             <br>
             <div class="is-size-5 publication-authors is-dark is">
-              ICLR 2025
+              ICLR 2026
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://openreview.net/pdf?id=wmV4cIbgl6" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://openreview.net/forum?id=MtdrOCLAGY" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
                     <span>Paper</span>
                   </a>
                 </span>
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://www.arxiv.org/abs/2503.17452" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
                     <span>arXiv</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/CausalRivers/causalrivers" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://github.com/TCD-Arena" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Benchmark</span>
+                    <span>Code</span>
                   </a>
                 </span>
                 <!-- Dataset Link. -->
@@ -146,11 +147,11 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
-        <!-- Visual Effects. -->
-        <div class="column has-text-centered">
+        Visual Effects. -->
+        <!-- <div class="column has-text-centered">
           <div class="content">
             <h2 class="title is-3">RiversEastGermany</h2>
             <img src="./static/images/east.webp" class="interpolation-image" alt="Rivers in East-Germany" width="500" height="702" />
@@ -184,7 +185,7 @@
           </div>
           </div>
         </div>
-  </section>
+  </section> -->
 
   <section class="section">
     <div class="container is-max-desktop">
@@ -194,24 +195,20 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Causal discovery, or identifying causal relationships from observational data, is a notoriously challenging task, with numerous methods proposed to tackle it.
-              Despite this, in-the-wild evaluation is still lacking, as works frequently rely on synthetic data evaluation and sparse real-world examples under critical theoretical assumptions.
-              Real-world causal structures, however, are often complex, evolving over time, non-linear, and influenced by unobserved factors, making it hard for practitioners to select appropriate methods.
-              To bridge this gap, we introduce <strong>CausalRivers</strong>, the largest in-the-wild causal discovery benchmarking kit for time series data to date.
+              Causal Discovery (CD) is a powerful framework for scientific inquiry. 
+              Yet, its practical adoption is hindered by a reliance on strong, often unverifiable assumptions and a lack of robust performance assessment. 
+              To address these limitations and advance empirical CD evaluation, we present TCD-Arena, a modularized and extendable testing kit to assess
+               the robustness of time series CD algorithms against stepwise more severe assumption violations. 
             </p>
             <p>
-              CausalRivers features an extensive dataset on river discharge that covers the complete eastern German territory (666 measurement stations) and the state of Bavaria (494 measurement stations).
-              It spans the years 2019 to 2023 with a 15-minute temporal resolution.
-              Further, we provide data from a recent flood around the Elbe River, as an event with a pronounced distributional shift.
-              Leveraging multiple sources of information and time-series meta-data, we constructed two distinct causal ground truth graphs (Bavaria and eastern Germany).
-              These graphs can be sampled to generate thousands of subgraphs to benchmark causal discovery across diverse and challenging settings.
+
+               For demonstration, we conduct an extensive empirical study comprising arround 30 million individual CD attempts and reveal nuanced robustness 
+               profiles for 33 distinct assumption violations. Further, we investigate CD ensembles and find that they can boost general robustness, 
+               which has implications for real-world applications. 
+               With this, we strive to ultimately facilitate the development of CD methods that are reliable for
+                a diverse range of synthetic and potentially real-world data conditions.
             </p>
-            <p>
-              To demonstrate the utility of our benchmarking kit, we evaluate several causal discovery approaches through multiple experiments and introduce effective baselines, identifying several areas for enhancement.
-              CausalRivers has the potential to facilitate robust evaluations and comparisons of causal discovery methods.
-              Besides this primary purpose, we also expect that this dataset will be relevant for connected areas of research, such as time series forecasting and anomaly detection.
-              Based on this, we hope to establish benchmark-driven method development that fosters advanced techniques for causal discovery, as is the case for many other areas of machine learning.
-            </p>
+           
           </div>
         </div>
       </div>
@@ -221,44 +218,64 @@
   </section>
 
 
-  <section class="section">
+    <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Content coming soon..
+            </p>
+           
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+      
+    </div>
+  </section>
+
+
+  <!-- <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <!-- Visual Effects. -->
-        <div class="column">
+        Visual Effects. -->
+        <!-- <div class="column">
           <div class="content">
             <h2 class="title is-3">Current Benchmarking Results</h2>
 
 
               <table id="my-table" class="display">
-                <!-- The header will be generated by JavaScript -->
-              </table>
+                The header will be generated by JavaScript -->
+              <!-- </table>
 
             <p>
               This is an active leaderboard and you can submit your results via <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDcNKLPo0L5ihIV9HDFhhkTWLNzcexsFWXvaU6tb8lPdBlyQ/viewform">the submission form</a>. Additional infos can be found <a href="https://github.com/CausalRivers/causalrivers/blob/main/README.md">here</a>. 
             </p>
              <p>
               If you don't see the table, check if you have JavaScript activated. 
-            </p>
-          </div>
+            </p> -->
+          <!-- </div>
           
          
 
-  </section>
+  </section> -->
         
-<section class="section">
+<!-- <section class="section">
     <div class="container is-max-desktop">   
-      <!-- Paper video. -->
-      <div class="columns is-centered has-text-centered">
+      Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered">
           <div class="publication-video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/3O98hbeIIXc?si=95P4Sx_O4xZPCv5P" title="CausalRivers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
       </div>
-      <!--/ Paper video. -->
+      / Paper video. -->
       
-    
+<!--     
   </div>
-</section>
+</section> -->
 
   
 
@@ -273,6 +290,7 @@
               The more benchmarking the better! While we are not connected to these projects, we specifically encourage to also test your methods on:
             </p>
             <ul>
+              <li><a href="https://www.arxiv.org/abs/2503.17452">CausalRivers - Scaling up benchmarking of causal discovery for real-world time-series</a></li>
               <li><a href="https://proceedings.mlr.press/v236/mogensen24a.html">Causal discovery in a complex industrial system: A time series benchmark</a></li>
               <li><a href="https://arxiv.org/abs/2406.04598">OCDB: Revisiting Causal Discovery with a Comprehensive Benchmark and Evaluation Framework</a></li>
               <li><a href="http://arxiv.org/abs/2310.01753">Realistically Generated Time-series for Benchmarking of Causal Discovery</a></li>
@@ -290,13 +308,14 @@
       <h2 class="title">BibTeX</h2>
       <pre>
       <code>
-@inproceedings{2025causalrivers,
-  title={CausalRivers - Scaling up benchmarking of causal discovery for real-world time-series},
-  author={Gideon, Stein and Maha, Shadaydeh and Jan, Blunk and Niklas, Penzel and Joachim, Denzler},
-  booktitle={The Thirteenth International Conference on Learning Representations},
-  year={2025},
-  url={https://openreview.net/forum?id=wmV4cIbgl6}
-}     </code>
+@inproceedings{
+anonymous2026tcdarena,
+title={{TCD}-Arena: Assessing Robustness of Time Series Causal Discovery Methods Against Assumption Violations},
+author={Gideon Stein and Niklas Penzel and Tristan Piater and Joachim Denzler},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=MtdrOCLAGY}
+}    </code>
       </pre>
     </div>
   </section>
@@ -304,7 +323,7 @@
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <a class="icon-link" href="https://openreview.net/forum?id=wmV4cIbgl6">
+        <a class="icon-link" href="https://openreview.net/forum?id=MtdrOCLAGY">
           <i class="fas fa-file-pdf"></i>
         </a>
         <a class="icon-link" href="https://github.com/cvjena" class="external-link" disabled>
@@ -319,17 +338,6 @@
               The source code of this site is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">here</a>.
               We thank its creators for their work. 
             </p>
-            <p> We thank the following German state institutions for the provision of data:<br>
-            <a href="https://tlubn.thueringen.de/">Thüringer Landesamt für Umwelt, Bergbau und Naturschutz</a><br>
-            <a href="https://gld.lhw-sachsen-anhalt.de/">Landesbetrieb für Hochwasserschutz und Wasserwirtschaft Sachsen-Anhalt</a><br>
-            <a href="https://www.umwelt.sachsen.de/umwelt/infosysteme/lhwz/index.html">Sächsisches Landesamt für Umwelt, Landwirtschaft und Geologie</a><br>
-            <a href="https://www.lung.mv-regierung.de/">Landesamt für Umwelt, Naturschutz und Geologie Mecklenburg-Vorpommern</a><br>
-            <a href="https://wasserportal.berlin.de/start.php">Senatsverwaltung für Mobilität, Verkehr, Klimaschutz und Umwelt</a><br>
-            <a href="https://lfu.brandenburg.de/lfu/de/">Landesamt für Umwelt Brandenburg</a><br>
-            <a href="https://www.gdws.wsv.bund.de/">Generaldirektion Wasserstraßen und Schifffahrt</a><br>
-            <a href="https://www.hnd.bayern.de/">Bayerisches Landesamt für Umwelt</a><br>
-            </p>
-            All data sources fall under the <a href="https://www.govdata.de/dl-de/by-2-0">Data license Germany</a>.
             <br><a rel="license" href="impressum_privacy.html">Impressum and Data privacy</a>.
           </div>
         </div>
