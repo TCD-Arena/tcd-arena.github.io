@@ -1,16 +1,16 @@
 # Nerfies
 
-This is the repository that contains source code for the [Causal Rivers website](https://causalrivers.github.io).
+This is the repository that contains source code for the [TCD-Arena website](https://tcd-arena.github.io).
 
-If you find CausalRivers useful for your work please cite:
+If you find TCD-Arena useful for your work please cite:
 ```
 @inproceedings{
-2025causalrivers,
-title={CausalRivers - Scaling up benchmarking of causal discovery for real-world time-series},
-author={Gideon, Stein and Maha, Shadaydeh and Jan, Blunk and Niklas, Penzel and Joachim, Denzler},
-booktitle={The Thirteenth International Conference on Learning Representations},
-year={2025},
-url={https://openreview.net/forum?id=wmV4cIbgl6}
+anonymous2026tcdarena,
+title={{TCD}-Arena: Assessing Robustness of Time Series Causal Discovery Methods Against Assumption Violations},
+author={Gideon Stein and Niklas Penzel and Tristan Piater and Joachim Denzler},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=MtdrOCLAGY}
 }
 ```
 
