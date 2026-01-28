@@ -1,4 +1,4 @@
-# Nerfies
+# TCD-Arena
 
 This is the repository that contains source code for the [TCD-Arena website](https://tcd-arena.github.io).
 
