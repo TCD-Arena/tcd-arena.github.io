@@ -122,15 +122,6 @@
                     <span>Paper</span>
                   </a>
                 </span>
-                <!-- <span class="link-block">
-                  <a href="https://www.arxiv.org/abs/2503.17452" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a>
-                </span> -->
-                <!-- Code Link. -->
                 <span class="link-block">
                   <a href="https://github.com/TCD-Arena" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -140,12 +131,12 @@
                   </a>
                 </span>
                 <!-- Dataset Link. -->
-                <!-- <span class="link-block">
-                  <a href="https://github.com/CausalRivers/benchmark" class="external-link button is-normal is-rounded is-dark">
+                <span class="link-block">
+                  <a href="https://github.com/TCD-Arena/TCD-Arena/releases/tag/data" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Experiments</span> -->
+                    <span>Dataset</span>
                 </a>
               </div>
 
@@ -156,45 +147,29 @@
     </div>
   </section>
 
-  <!-- <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        Visual Effects. -->
-        <!-- <div class="column has-text-centered">
-          <div class="content">
-            <h2 class="title is-3">RiversEastGermany</h2>
-            <img src="./static/images/east.webp" class="interpolation-image" alt="Rivers in East-Germany" width="500" height="702" />
-            <p style="font-size: 0.9rem;" class="is-centered">
-              We provide a causal ground truth graph with <strong>666 nodes</strong> that spans over the full area of the former East-German republic.
-              For each nodes, a high resolution time-series that spans <strong>5 years</strong> is provided.
-            </p>
-          </div>
-        </div>
-        <div class="column has-text-centered">
-          <h2 class="title is-3">RiversBavaria</h2>
-          <div class="columns is-centered">
-            <div class="column content">
-              <img src="./static/images/bav.webp" class="interpolation-image" alt="Rivers in Bavaria" width="500" height="699" />
-              <p style="font-size: 0.9rem;" class="is-centered">
-                On top of the main benchmark, we provide a similarly sized ground truth graph for the state of Bavaria which holds <strong>495 nodes</strong> and time-series for the same <strong>5 year period</strong>.
-              </p>
-            </div>
 
-          </div>
+
+  <section class="section" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered is-vcentered" style="margin-bottom: 1rem;">
+        <div class="column is-three-quarters">
+          <img src="./static/images/tcd_arena.webp" class="interpolation-image" alt="WCG Graph" style="max-width: 100%; height: auto;" />
         </div>
-  
+      </div>
+      <div class="columns is-centered has-text-centered" style="margin-top: 0.5rem;">
+        
+        <div class="column is-four-fifths">
+          <h2 class="title is-2" style="margin-bottom: 1rem; margin-top: 0;">
+            <span style="color: #721207; font-weight: bold; font-size: 1.3em;">The real world is messy.</span>
+          </h2>
+          <h3 class="subtitle is-4" style="line-height: 1.6; margin-bottom: 1rem;">
+            How robust is Causal Discovery outside of idealized (but synthetic) data conditions?
+          </h3>
+
+        </div>
       </div>
     </div>
-    <div class="columns is-centered has-text-centered">
-          <div class="column is-two-fifths">
-          <div class="publication-video">
-            <iframe title="Video" src="./static/videos/ts_v.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen width="800"></iframe>
-          </div>
-          <p>River discharge measured at 5 different connected locations.</p>
-          </div>
-          </div>
-        </div>
-  </section> -->
+  </section>
 
   <section class="section">
     <div class="container is-max-desktop">
@@ -226,65 +201,65 @@
     </div>
   </section>
 
-
-    <section class="section">
+  <section class="section">
     <div class="container is-max-desktop">
-      <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3"></h2>
-          <div class="content has-text-centered">
-            <p>
-              More content coming soon..
-            </p>
-           
+        <div class="column">
+          <h2 class="title is-3">Current Benchmarking results</h2>
+          <div class="columns is-centered">
+            <div class="column is-four-fifths content">
+              <img src="./static/images/main.webp" class="interpolation-image" alt="SG" style="max-width: 100%; height: auto;" />
+            </div>
           </div>
         </div>
       </div>
-      <!--/ Abstract. -->
-      
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h3 class="title is-3">Supported assumption violations </h3>
+          <div class="content is-centered">
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+              <strong>TCD-Arena</strong> is an active benchmarking framework. <br /> You can directly use our provided data to benchmark.  <br />But you can also generate your new and custom data by mixing various violations.
+            </p>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-four-fifths content">
+              <img src="./static/images/vios.webp" class="interpolation-image" alt="SG" style="max-width: 100%; height: auto;" />
+            </div>
+          </div>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+              <strong>Individual evaluation is possible.</strong> <br />Check out our repository for more details on how to use TCD-Arena for your own benchmarking. <br />We are also working on a leaderboard to submit your results and compare with others.
+            </p>
+          <div class="columns is-centered">
+            <div class="column is-four-fifths content">
+              <img src="./static/images/wcg_G.webp" class="interpolation-image" alt="SG" style="max-width: 100%; height: auto;" />
+            </div>
+          </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+
+        </div>
+      </div>
     </div>
   </section>
 
 
-  <!-- <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        Visual Effects. -->
-        <!-- <div class="column">
-          <div class="content">
-            <h2 class="title is-3">Current Benchmarking Results</h2>
 
 
-              <table id="my-table" class="display">
-                The header will be generated by JavaScript -->
-              <!-- </table>
 
-            <p>
-              This is an active leaderboard and you can submit your results via <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDcNKLPo0L5ihIV9HDFhhkTWLNzcexsFWXvaU6tb8lPdBlyQ/viewform">the submission form</a>. Additional infos can be found <a href="https://github.com/CausalRivers/causalrivers/blob/main/README.md">here</a>. 
-            </p>
-             <p>
-              If you don't see the table, check if you have JavaScript activated. 
-            </p> -->
-          <!-- </div>
-          
-         
-
-  </section> -->
-        
-<!-- <section class="section">
-    <div class="container is-max-desktop">   
-      Paper video. -->
-      <!-- <div class="columns is-centered has-text-centered">
-          <div class="publication-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3O98hbeIIXc?si=95P4Sx_O4xZPCv5P" title="CausalRivers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-      </div>
-      / Paper video. -->
-      
-<!--     
-  </div>
-</section> -->
 
   
 
