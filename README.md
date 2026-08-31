@@ -5,7 +5,7 @@ This is the repository that contains source code for the [TCD-Arena website](htt
 If you find TCD-Arena useful for your work please cite:
 ```
 @inproceedings{
-anonymous2026tcdarena,
+stein2026tcdarena,
 title={{TCD}-Arena: Assessing Robustness of Time Series Causal Discovery Methods Against Assumption Violations},
 author={Gideon Stein and Niklas Penzel and Tristan Piater and Joachim Denzler},
 booktitle={The Fourteenth International Conference on Learning Representations},
